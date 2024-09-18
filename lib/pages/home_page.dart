@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
             ),
             SliverList(delegate: SliverChildBuilderDelegate((context, index)
             {
-              print("build post with index $index");
+              debugPrint("build post with index $index");
               return const PostItem();
             }
             )
@@ -141,38 +141,4 @@ class HomePage extends StatelessWidget {
   }
 }
 
-// class HomeBody extends StatelessWidget {
-//   const HomeBody({
-//     super.key,
-//     required this.size,
-//   });
-//
-//   final Size size;
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return SingleChildScrollView(
-//       child: Column(
-//         children: [
-//           const Divider(
-//             thickness: 20,
-//             color: Colors.grey,
-//           ),
-//           ListView.separated(
-//             physics: const NeverScrollableScrollPhysics(),
-//             shrinkWrap: true,
-//             itemBuilder: (context, index) {
-//               return const PostItem();
-//             },
-//             separatorBuilder: (context, index) {
-//               return const Divider(
-//                 thickness: 15,
-//               );
-//             }, itemCount: 20,
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-// }
 
